@@ -3,6 +3,7 @@ Simple ruby maths just for fun.
 - Integer factorization
 
 ruby primes.rb 50
+
 2
 3
 5
@@ -21,6 +22,7 @@ ruby primes.rb 50
 
 
 ruby primes.rb 25 50
+
 29
 31
 37
@@ -30,13 +32,19 @@ ruby primes.rb 25 50
 
 
 ruby factorize.rb 100
+
 {2=>2, 5=>2}
+
 2^2 | 4 | 4
+
 5^2 | 25 | 100
 
 
 ruby factorize.rb 1234567
+
 {127=>1, 9721=>1}
+
 127^1 | 127 | 127
+
 9721^1 | 9721 | 1234567
 
