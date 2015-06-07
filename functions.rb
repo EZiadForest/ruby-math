@@ -62,23 +62,20 @@ module Primes
       prime = true
       divisors.each do |divisor|
         rest = num_to_check % divisor
-        # puts "#{num_to_check} % #{divisor} = #{rest}"
         if rest == 0
           prime = false
         end
       end
 
       if prime
-        # puts "inside if"
+        #divide by 6n-1 and 6n+1
         (5..max_number).step(6).each do |divisor|
           rest = num_to_check % divisor
-          # puts "#{num_to_check} % #{divisor} = #{rest}"
           if rest == 0
             prime = false
             break
           end
           rest = num_to_check % (divisor+2)
-          # puts "#{num_to_check} % #{divisor+2} = #{rest}"
           if rest == 0
             prime = false
             break
